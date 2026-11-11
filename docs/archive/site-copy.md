@@ -1,3 +1,5 @@
+> Arsip historis. Struktur folder dan isi website saat ini dijelaskan di [README utama](../../README.md).
+
 # Dokumentasi Teks Lengkap Web Application
 
 Dokumen ini berisi seluruh konten teks yang ditampilkan di dalam aplikasi web landing page **Spesialis Data Analytics & Konsultan Business Intelligence (BI)**.

@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://iamikhsank.github.io/sitemap.xml

@@ -1,3 +1,5 @@
+> Arsip historis. Struktur folder dan isi website saat ini dijelaskan di [README utama](../../README.md).
+
 # Dokumentasi Schema.org JSON-LD (@graph Architecture)
 
 Dokumen ini berisi salinan lengkap dan penjelasan teknis dari **Structured Data Schema.org** bertipe `@graph` yang diimplementasikan pada file `index.html` aplikasi web landing page **Ikhsan Kamal - Data Analytics & Business Intelligence Consultant**.

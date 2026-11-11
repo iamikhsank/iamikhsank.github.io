@@ -1,77 +1,71 @@
-# Executive Portfolio: Data Analytics & Business Intelligence Consulting
+# Ikhsan Kamal — Portfolio
 
-> **Spesialis Data Analytics & Konsultan Business Intelligence (BI)**  
-> *Mengubah jutaan baris data mentah perusahaan menjadi Executive Dashboard Interaktif, Prediksi Bisnis berbasis Machine Learning, dan Laporan Strategis.*
+Website profesional untuk layanan analisis data, Business Intelligence, Machine Learning, otomasi, dan aplikasi web berbasis data.
 
-**Live Website**: [https://iamikhsank.github.io/](https://iamikhsank.github.io/)
+**Website:** https://iamikhsank.github.io/
 
----
+## Struktur repo
 
-## Layanan Utama & Arsitektur Solusi
+| Lokasi | Isi |
+| --- | --- |
+| `src/App.tsx` | Halaman, navigasi, dan interaksi React |
+| `src/components/` | Komponen antarmuka yang digunakan ulang |
+| `src/data/articles.ts` | Daftar artikel dan publikasi |
+| `src/data/portfolio.ts` | Daftar proyek dan studi kasus website publik |
+| `src/types/content.ts` | Tipe data artikel, proyek, dan studi kasus |
+| `src/translations.ts` | Teks terjemahan |
+| `src/index.css` | Gaya global dan komponen |
+| `public/` | Gambar, favicon, verifikasi Google, robots.txt, dan sitemap |
+| `gas-src/` | Backend Apps Script dan inisialisasi Sheets |
+| `scripts/` | Build halaman statis, pengalihan URL lama, dan ekspor GAS |
+| `docs/` | Persyaratan dan panduan dokumentasi |
+| `docs/archive/` | Catatan dan snapshot historis |
+| `.github/workflows/deploy.yml` | Deployment GitHub Pages otomatis |
 
-### 1. Data Cleansing & ETL Pipeline
-- Pembersihan, standarisasi, dan konsolidasi data multi-sumber (*Google Sheets, MS Excel, Database MySQL, CRM, ERP, POS Kasir*).
-- Skema validasi ketat, penghentian duplikasi, dan otomatisasi *data scrubbing*.
+## Pengembangan lokal
 
-### 2. Power BI, Tableau & Web App Dashboards
-- Visualisasi tingkat korporat untuk memantau metrik krusial (*Sales Performance, Inventory Tracking, Cash Flow, Marketing ROI*).
-- Desain *glassmorphism* modern dengan integrasi *real-time* web & mobile.
-
-### 3. Data Science & Predictive Analytics (Python ML)
-- Algoritma Python canggih (*Pandas, Scikit-learn*) untuk keputusan presisi:
-  - **Sales Forecasting**: Prediksi volume omzet & tren penjualan di masa depan.
-  - **RFM Customer Segmentation**: Memetakan profil pelanggan berdaya beli tertinggi.
-  - **Churn Prediction**: Mendeteksi potensi kepindahan pelanggan ke kompetitor.
-
-### 4. Actionable Insights & Executive Reporting
-- Penyusunan dokumen laporan analitik komprehensif berisi rekomendasi langkah strategis yang siap dieksekusi oleh dewan direksi dan manajemen operasional.
-
----
-
-## Tech Stack & Arsitektur
-
-| Kategori | Teknologi |
-|---|---|
-| **Frontend Framework** | React 19, TypeScript, Vite |
-| **Styling & Motion** | Tailwind CSS v4, GSAP (ScrollTrigger & Easing), Custom Glassmorphism |
-| **Icons & Design** | Hugeicons Vector WebP CDN, Lucide Icons, Flaticon Logos |
-| **Backend & Database** | Google Apps Script (GAS), Google Sheets Engine (Serverless Zero-TCO) |
-| **BI & Analytics Tools** | Power BI, Tableau, Python (Pandas, Scikit-learn) |
-
----
-
-## Pengembangan Lokal
+Gunakan Node.js 20 atau lebih baru.
 
 ```bash
-# 1. Clone repository
 git clone https://github.com/iamikhsank/iamikhsank.github.io.git
-
-# 2. Masuk ke direktori
 cd iamikhsank.github.io
-
-# 3. Install dependensi
-npm install
-
-# 4. Jalankan server lokal
+npm ci
 npm run dev
 ```
 
-Aplikasi dapat diakses di `http://localhost:3000`.
+Buka http://localhost:3000. Gunakan `.env.example` sebagai referensi konfigurasi lokal; file `.env` tidak disimpan ke Git.
 
----
+## Memperbarui konten
 
-## Build & Deployment
+- **Proyek:** edit `src/data/portfolio.ts`. Gunakan ID unik dan simpan gambar lokal di `public/assets/prj_img/`. Path pada data dapat menggunakan `./assets/prj_img/nama-file.webp`.
+- **Artikel:** edit `src/data/articles.ts`, termasuk judul, ringkasan, URL, gambar, tanggal, dan platform.
+- **SEO beranda:** edit `index.html`. Metadata halaman layanan diatur melalui `scripts/prerender.js` dan pengaturan judul di `src/App.tsx`.
+- **Sitemap dan robots:** edit hanya file di `public/`. Vite menyalinnya ke hasil build.
+- **Apps Script:** sumber berada di `gas-src/`. Data Sheets yang dipakai di GAS dikelola terpisah dari daftar statis website publik.
+
+## Pemeriksaan dan build
 
 ```bash
-# Production Build
+npm run lint
 npm run build
-
-# Deploy langsung ke GitHub Pages (branch gh-pages)
-npm run deploy
+npm run preview
 ```
 
----
+Build menghasilkan:
 
-## Lisensi & Hak Cipta
+- `dist/`: website siap deploy beserta halaman layanan, aset, sitemap, dan pengalihan dari `/Web-Profile-iamikhsank/`.
+- `exports/`: `Dashboard-for-Spreadsheet.html`, salinan `.txt`, serta `code.gs` dan `setup.gs` untuk distribusi GAS. Nama HTML tetap sesuai dengan `HtmlService.createTemplateFromFile("Dashboard-for-Spreadsheet")`.
 
-© 2026 Ikhsan K. Spesialis Data Analytics & Konsultan Business Intelligence. All rights reserved.
+Salinan HTML dan TXT juga tersedia di root hasil deploy dengan nama yang sama. File hasil build tidak disimpan ke Git. Jalankan `npm run clean` untuk membersihkan `dist/` dan `exports/`.
+
+## Deployment
+
+Push ke `main` menjalankan GitHub Actions untuk memasang dependensi, build, dan menerbitkan `dist/` ke GitHub Pages.
+
+`npm run deploy` tetap tersedia untuk deployment manual melalui branch `gh-pages`; alur utama repo menggunakan GitHub Actions.
+
+## Dokumentasi
+
+Lihat [indeks dokumentasi](docs/README.md). Catatan di `docs/archive/` dipertahankan untuk referensi historis dan dapat menyebut struktur atau konten versi lama.
+
+© 2026 Ikhsan Kamal. All rights reserved.

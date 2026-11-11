@@ -1,3 +1,5 @@
+> Arsip historis. Struktur folder dan isi website saat ini dijelaskan di [README utama](../../README.md).
+
 # Rekap Pengembangan - Jasa Web App Google Apps Script Modern
 
 Dokumen ini mendokumentasikan kronologi, langkah-langkah teknis, dan file yang berhasil dibuat atau diperbarui dalam membangun Landing Page interaktif Jasa Pembuatan Web App Google Apps Script.

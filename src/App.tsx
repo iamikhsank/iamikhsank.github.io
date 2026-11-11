@@ -3259,13 +3259,14 @@ ${formData.message}`;
                     <span className="text-white/40 font-semibold text-xs sm:text-sm tracking-[0.2em] uppercase mb-4 block">{lang === 'en' ? 'Start Collaboration' : 'Mulai Kolaborasi'}</span>
                     <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-4 sm:mb-6 tracking-tight leading-tight">{lang === 'en' ? <>Automate your business <br/>today.</> : <>Otomatiskan bisnis <br/>Anda hari ini.</>}</h2>
                     <p className="text-[#86868b] text-base sm:text-lg mb-8 sm:mb-10 leading-relaxed font-light max-w-lg">
-                        {lang === 'en' ? <>Schedule a <span className="text-white font-medium">30-minute discovery call</span>. We will analyze your current workflow and map out the right system architecture—no commitment required.</> : <>Jadwalkan sesi <span className="text-white font-medium">discovery call (30 Menit)</span>. Kita akan membedah alur kerja Anda saat ini dan memetakan arsitektur sistem yang tepat—tanpa komitmen apapun.</>}
+                        {lang === 'en' ? <>Schedule a <span className="text-white font-medium">30-minute discovery call</span> via WhatsApp. We will analyze your current workflow and map out the right system architecture—no commitment required.</> : <>Jadwalkan sesi <span className="text-white font-medium">discovery call (30 Menit)</span> melalui WhatsApp. Kita akan membedah alur kerja Anda saat ini dan memetakan arsitektur sistem yang tepat—tanpa komitmen apapun.</>}
                     </p>
                     
                     <div className="flex flex-col sm:flex-row gap-4 mb-8 sm:mb-12">
-                        {/* Direct Booking Button (Calendly style - Specular Glint) */}
+                        {/* Consultation scheduling request via WhatsApp */}
                         <a 
-                          href="https://calendly.com/your-link" 
+                          href={`https://wa.me/6282126574799?text=${encodeURIComponent(lang === 'en' ? 'Hi Ikhsan, I would like to schedule a consultation about a data analytics or automation project. Could we arrange a suitable time?' : 'Halo Mas Ikhsan, saya ingin menjadwalkan konsultasi terkait proyek analisis data atau otomasi. Boleh dibantu menentukan jadwal yang tersedia?')}`}
+                          rel="noopener noreferrer" 
                           target="_blank" 
                           className="glint-border-wrapper group cursor-pointer text-center w-full sm:w-auto"
                         >
@@ -3273,7 +3274,7 @@ ${formData.message}`;
                           <div className="shimmer-sweep-beam"></div>
                           <span className="glint-inner-pill px-6 py-3.5 sm:px-8 sm:py-4 text-sm sm:text-base">
                             <svg className="w-5 h-5 shrink-0 text-white/90 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
-                            <span className="font-extrabold tracking-tight text-white">{lang === 'en' ? 'Calendar Booking' : 'Booking Kalender'}</span>
+                            <span className="font-extrabold tracking-tight text-white">{lang === 'en' ? 'Schedule Consultation' : 'Jadwalkan Konsultasi'}</span>
                           </span>
                         </a>
 

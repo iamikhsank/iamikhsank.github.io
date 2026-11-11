@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import PortfolioCover from "./components/PortfolioCover";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
@@ -2023,18 +2024,9 @@ ${formData.message}`;
               return (
                 <div key={item.id} className="glass-panel p-6 sm:p-8 md:p-10 rounded-2xl md:rounded-3xl border border-white/10 hover:border-white/20 transition-all duration-300 flex flex-col justify-between group">
                   <div>
-                    <div className="relative h-48 rounded-2xl overflow-hidden mb-5">
-                      <img src={resolveAssetUrl(item.linkGambar)} alt={`Studi Kasus Analisis Data ${item.judul} - ${item.kategori}`} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                      <a 
-                        href={fastworkUrl} 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        className="absolute top-3 left-3 glint-pill-static text-xs backdrop-blur-md cursor-pointer z-20 hover:scale-105 transition-transform"
-                        title={`Pesan Layanan Kategori ${item.kategori} di Fastwork`}
-                      >
-                        {item.kategori} ↗
-                      </a>
-                    </div>
+                    <button type="button" onClick={() => setSelectedCaseStudy(item)} aria-label={`Lihat studi kasus ${item.judul}`} className="block w-full text-left rounded-2xl overflow-hidden mb-5 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white">
+                      <PortfolioCover image={resolveAssetUrl(item.linkGambar)} title={item.judul} category={item.kategori} tools={item.techStack} color={item.warnaKategori} />
+                    </button>
 
                     <h3 className="text-2xl sm:text-3xl font-bold text-white mb-2 leading-snug group-hover:text-white/90 transition-colors">
                       {item.seoTitle}
@@ -2492,7 +2484,7 @@ ${formData.message}`;
                     return (
                         <div key={item.id} className="project-card md:sticky md:top-24 pt-4 pb-4" style={{ zIndex: index + 10 }}>
                             <div className={`card-inner w-full rounded-2xl md:rounded-3xl border border-white/10 shadow-[0_20px_50px_-12px_rgba(0,0,0,0.8)] ${index % 2 !== 0 ? 'bg-[#121214]' : 'bg-[#0a0a0c]'} overflow-hidden flex flex-col md:flex-row relative origin-top`}>
-                                <div className="w-full md:w-[62%] p-6 sm:p-8 md:p-10 flex flex-col justify-between z-10">
+                                <div className="w-full md:w-[58%] p-6 sm:p-8 md:p-10 flex flex-col justify-between z-10">
                                     <div>
                                         {/* Badge Section (Static Glossy Glint Pill - No Rotation) */}
                                         <div className="flex items-center gap-2.5 mb-4">
@@ -2547,22 +2539,10 @@ ${formData.message}`;
                                         </div>
                                     </div>
                                 </div>
-                                <div className="w-full md:w-[38%] min-h-[220px] md:min-h-full relative overflow-hidden bg-black/50 p-6 sm:p-8 md:p-10 cursor-pointer group">
-                                    <div className="w-full h-full min-h-[200px] rounded-2xl overflow-hidden relative shadow-xl border border-white/5">
-                                        <img src={resolveAssetUrl(item.linkGambar)} alt={`Tampilan Visualisasi Dashboard ${item.judul} oleh Ikhsan Kamal`} className="absolute inset-0 w-full h-full object-cover object-left-top transition-transform duration-700 group-hover:scale-105 opacity-85" />
-                                        
-                                        {/* Link Overlay */}
-                                        {item.linkProject && item.linkProject !== '#' && (
-                                            <a href={item.linkProject} target="_blank" rel="noopener noreferrer" className="image-overlay-link">
-                                                <span>
-                                                    Lihat Aplikasi
-                                                    <svg className="external-link-icon" viewBox="0 0 24 24">
-                                                        <path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                                                    </svg>
-                                                </span>
-                                            </a>
-                                        )}
-                                    </div>
+                                <div className="w-full md:w-[42%] relative bg-black/30 p-4 sm:p-6 flex items-center">
+                                    <button type="button" onClick={() => setSelectedCaseStudy(item)} aria-label={`Lihat studi kasus ${item.judul}`} className="w-full text-left rounded-2xl overflow-hidden cursor-pointer group focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white">
+                                        <PortfolioCover image={resolveAssetUrl(item.linkGambar)} title={item.judul} category={item.kategori} tools={item.techStack} color={item.warnaKategori} />
+                                    </button>
                                 </div>
                             </div>
                         </div>

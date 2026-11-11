@@ -64,6 +64,19 @@ export interface ArtikelItem {
 
 const artikelList: ArtikelItem[] = [
   {
+    "id": "ART-017",
+    "judul": "Indonesia Economic Sentiment Analysis",
+    "seoTitle": "Analisis Sentimen Bisnis & Konsumen Indonesia — ITB & ITK BPS",
+    "deskripsi": "Apakah optimisme konsumen selalu sejalan dengan pelaku bisnis? Analisis 80 observasi kuartalan data publik BPS (2000 Q2–2020 Q1), mencakup tren ITB–ITK, korelasi 0,369, divergensi sentimen, dan empat halaman visualisasi dashboard interaktif.",
+    "platform": "LinkedIn",
+    "kategori": "Economic Analytics & BI",
+    "linkArtikel": "https://lnkd.in/p/gUZ7fdiT",
+    "linkGambar": "./assets/prj_img/indonesia-economic-sentiment.webp",
+    "tanggalPublikasi": "10 Nov 2026",
+    "waktuBaca": "4 halaman PDF",
+    "penulis": "Ikhsan Kamal"
+  },
+  {
     id: "ART-016",
     judul: "Phone Marketing Fatigue: 3 Key Insights for Financial Sector",
     seoTitle: "Institutional Tele-Deposit Intelligence & Customer Propensity Detection Project (Telesales Campaign Analytics)",

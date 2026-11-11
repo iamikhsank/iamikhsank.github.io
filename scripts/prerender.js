@@ -24,37 +24,37 @@ const routes = [
     path: 'services/power-bi-dashboard',
     title: 'Jasa Dashboard Power BI & Tableau Enterprise | Ikhsan Kamal',
     description: 'Layanan pembuatan Dashboard Power BI, Tableau, dan Google Looker Studio interaktif untuk eksekutif & perusahaan. Visualisasi data real-time dan otomatisasi spreadsheet.',
-    canonical: 'https://iamikhsank.github.io/Web-Profile-iamikhsank/services/power-bi-dashboard/'
+    canonical: 'https://iamikhsank.github.io/services/power-bi-dashboard/'
   },
   {
     path: 'services/data-analysis',
     title: 'Jasa Analisis Data & SQL Data Analyst Indonesia | Ikhsan Kamal',
     description: 'Jasa konsultan analisis data bisnis, perancangan kueri SQL kompleks, Python data analysis, pembersihan data otomatis, dan pelaporan intelijen bisnis.',
-    canonical: 'https://iamikhsank.github.io/Web-Profile-iamikhsank/services/data-analysis/'
+    canonical: 'https://iamikhsank.github.io/services/data-analysis/'
   },
   {
     path: 'services/business-intelligence',
     title: 'Konsultan Business Intelligence (BI) Enterprise | Ikhsan Kamal',
     description: 'Jasa konsultan Business Intelligence terpadu. Perancangan arsitektur data warehouse, pemodelan data, otomatisasi ETL pipeline, dan dashboard laporan eksekutif.',
-    canonical: 'https://iamikhsank.github.io/Web-Profile-iamikhsank/services/business-intelligence/'
+    canonical: 'https://iamikhsank.github.io/services/business-intelligence/'
   },
   {
     path: 'services/machine-learning-ai',
     title: 'Jasa Machine Learning & Predictive Analytics AI | Ikhsan Kamal',
     description: 'Layanan pengembangan model Machine Learning, AI predictive analytics, klasifikasi data, kecerdasan buatan terapan, dan pemodelan prediktif bisnis.',
-    canonical: 'https://iamikhsank.github.io/Web-Profile-iamikhsank/services/machine-learning-ai/'
+    canonical: 'https://iamikhsank.github.io/services/machine-learning-ai/'
   },
   {
     path: 'case-studies',
     title: 'Galeri Studi Kasus & Portfolio Data Analytics | Ikhsan Kamal',
     description: 'Kumpulan studi kasus proyek data analytics, implementasi BI enterprise, dan otomasi spreadsheet yang telah berhasil dikerjakan untuk kementerian & perusahaan.',
-    canonical: 'https://iamikhsank.github.io/Web-Profile-iamikhsank/case-studies/'
+    canonical: 'https://iamikhsank.github.io/case-studies/'
   },
   {
     path: 'articles',
     title: 'Artikel & Publikasi Eksekutif Data Analytics | Ikhsan Kamal',
     description: 'Kumpulan artikel teknis, panduan arsitektur Data Analytics, serta wawasan Business Intelligence yang telah dipublikasikan di Medium, LinkedIn, dan jurnal eksekutif.',
-    canonical: 'https://iamikhsank.github.io/Web-Profile-iamikhsank/articles/'
+    canonical: 'https://iamikhsank.github.io/articles/'
   }
 ];
 
@@ -118,18 +118,18 @@ routes.forEach((route) => {
   const staticRootContent = `
     <header>
       <nav aria-label="Static Page Navigation">
-        <a href="https://iamikhsank.github.io/Web-Profile-iamikhsank/">IKHSAN K. - Data Analytics &amp; BI Consultant</a>
-        <a href="https://iamikhsank.github.io/Web-Profile-iamikhsank/">Utama</a>
-        <a href="https://iamikhsank.github.io/Web-Profile-iamikhsank/services/power-bi-dashboard/">Power BI &amp; Tableau</a>
-        <a href="https://iamikhsank.github.io/Web-Profile-iamikhsank/services/data-analysis/">Data Analysis &amp; ETL</a>
-        <a href="https://iamikhsank.github.io/Web-Profile-iamikhsank/services/business-intelligence/">Corporate BI</a>
-        <a href="https://iamikhsank.github.io/Web-Profile-iamikhsank/services/machine-learning-ai/">ML &amp; AI</a>
-        <a href="https://iamikhsank.github.io/Web-Profile-iamikhsank/case-studies/">Case Studies</a>
+        <a href="https://iamikhsank.github.io/">IKHSAN K. - Data Analytics &amp; BI Consultant</a>
+        <a href="https://iamikhsank.github.io/">Utama</a>
+        <a href="https://iamikhsank.github.io/services/power-bi-dashboard/">Power BI &amp; Tableau</a>
+        <a href="https://iamikhsank.github.io/services/data-analysis/">Data Analysis &amp; ETL</a>
+        <a href="https://iamikhsank.github.io/services/business-intelligence/">Corporate BI</a>
+        <a href="https://iamikhsank.github.io/services/machine-learning-ai/">ML &amp; AI</a>
+        <a href="https://iamikhsank.github.io/case-studies/">Case Studies</a>
       </nav>
     </header>
     <main>
       <nav aria-label="Breadcrumb">
-        <a href="https://iamikhsank.github.io/Web-Profile-iamikhsank/">Utama</a> &gt; 
+        <a href="https://iamikhsank.github.io/">Utama</a> &gt; 
         <a href="${route.canonical}">${route.title}</a>
       </nav>
       <article>
@@ -139,11 +139,11 @@ routes.forEach((route) => {
       <section>
         <h2>Layanan &amp; Navigasi Internal</h2>
         <ul>
-          <li><a href="https://iamikhsank.github.io/Web-Profile-iamikhsank/services/power-bi-dashboard/">Jasa Dashboard Power BI &amp; Tableau Enterprise</a></li>
-          <li><a href="https://iamikhsank.github.io/Web-Profile-iamikhsank/services/data-analysis/">Jasa Analisis Data &amp; SQL Data Analyst</a></li>
-          <li><a href="https://iamikhsank.github.io/Web-Profile-iamikhsank/services/business-intelligence/">Konsultan Business Intelligence (BI) Enterprise</a></li>
-          <li><a href="https://iamikhsank.github.io/Web-Profile-iamikhsank/services/machine-learning-ai/">Jasa Machine Learning &amp; Predictive Analytics AI</a></li>
-          <li><a href="https://iamikhsank.github.io/Web-Profile-iamikhsank/case-studies/">Galeri Studi Kasus &amp; Portfolio Data Analytics</a></li>
+          <li><a href="https://iamikhsank.github.io/services/power-bi-dashboard/">Jasa Dashboard Power BI &amp; Tableau Enterprise</a></li>
+          <li><a href="https://iamikhsank.github.io/services/data-analysis/">Jasa Analisis Data &amp; SQL Data Analyst</a></li>
+          <li><a href="https://iamikhsank.github.io/services/business-intelligence/">Konsultan Business Intelligence (BI) Enterprise</a></li>
+          <li><a href="https://iamikhsank.github.io/services/machine-learning-ai/">Jasa Machine Learning &amp; Predictive Analytics AI</a></li>
+          <li><a href="https://iamikhsank.github.io/case-studies/">Galeri Studi Kasus &amp; Portfolio Data Analytics</a></li>
         </ul>
       </section>
     </main>

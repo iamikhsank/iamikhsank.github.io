@@ -13,10 +13,10 @@ Dokumen ini berisi salinan lengkap dan penjelasan teknis dari **Structured Data 
   "@graph": [
     {
       "@type": "Person",
-      "@id": "https://iamikhsank.github.io/Web-Profile-iamikhsank/#person",
+      "@id": "https://iamikhsank.github.io/#person",
       "name": "Ikhsan Kamal",
       "jobTitle": "Data Analyst & Business Intelligence Analyst",
-      "url": "https://iamikhsank.github.io/Web-Profile-iamikhsank/",
+      "url": "https://iamikhsank.github.io/",
       "image": "https://drive.google.com/thumbnail?id=184y2ZUwxJn1mXCgPtX_kuomeJaQ461zE&sz=w1000",
       "sameAs": [
         "https://github.com/iamikhsank",
@@ -40,10 +40,10 @@ Dokumen ini berisi salinan lengkap dan penjelasan teknis dari **Structured Data 
     },
     {
       "@type": "ProfessionalService",
-      "@id": "https://iamikhsank.github.io/Web-Profile-iamikhsank/#service",
+      "@id": "https://iamikhsank.github.io/#service",
       "name": "Ikhsan Kamal - Data Analytics Consultant & Business Intelligence Analyst Indonesia",
-      "url": "https://iamikhsank.github.io/Web-Profile-iamikhsank/",
-      "image": "https://iamikhsank.github.io/Web-Profile-iamikhsank/assets/prj_img/Sales%20Analytics%20Cockpit%20(2).png",
+      "url": "https://iamikhsank.github.io/",
+      "image": "https://iamikhsank.github.io/assets/prj_img/Sales%20Analytics%20Cockpit%20(2).png",
       "description": "Layanan Data Analyst Indonesia, Power BI Consultant, Business Intelligence Analyst, Data Visualization, SQL & Python Data Analyst, serta Business Analytics.",
       "telephone": "+6282126574799",
       "priceRange": "Rp 3.500.000 - Rp 15.000.000",
@@ -53,7 +53,7 @@ Dokumen ini berisi salinan lengkap dan penjelasan teknis dari **Structured Data 
         "addressCountry": "ID"
       },
       "founder": {
-        "@id": "https://iamikhsank.github.io/Web-Profile-iamikhsank/#person"
+        "@id": "https://iamikhsank.github.io/#person"
       },
       "areaServed": ["Indonesia", "Global"],
       "hasOfferCatalog": {
@@ -94,7 +94,7 @@ Dokumen ini berisi salinan lengkap dan penjelasan teknis dari **Structured Data 
 ## 2. Rincian Komponen Entitas
 
 ### A. Entitas Person (`@type: Person`)
-- **ID Unik**: `https://iamikhsank.github.io/Web-Profile-iamikhsank/#person`
+- **ID Unik**: `https://iamikhsank.github.io/#person`
 - **Nama Resmi**: Ikhsan Kamal
 - **Gelar Jabatan**: Data Analyst & Business Intelligence Analyst
 - **Profiling Lintas Platform (`sameAs`)**:
@@ -116,7 +116,7 @@ Dokumen ini berisi salinan lengkap dan penjelasan teknis dari **Structured Data 
   10. Business Analytics
 
 ### B. Entitas Layanan Profesional (`@type: ProfessionalService`)
-- **ID Unik**: `https://iamikhsank.github.io/Web-Profile-iamikhsank/#service`
+- **ID Unik**: `https://iamikhsank.github.io/#service`
 - **Nama Bisnis**: Ikhsan Kamal - Data Analytics Consultant & Business Intelligence Analyst Indonesia
 - **Pendiri (`founder`)**: Terhubung langsung ke entitas `#person`
 - **Cakupan Wilayah (`areaServed`)**: `["Indonesia", "Global"]`

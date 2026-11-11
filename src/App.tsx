@@ -223,7 +223,7 @@ if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger, useGSAP);
 }
 
-const GITHUB_PAGES_BASE = '/Web-Profile-iamikhsank';
+const GITHUB_PAGES_BASE = '';
 
 const resolveAssetUrl = (assetPath: string): string => {
   if (!assetPath) return '';
@@ -329,8 +329,7 @@ export default function App() {
     if (isAppsScript) {
       window.location.hash = targetRoute === "/" ? "#/" : `#${targetRoute}`;
     } else {
-      const basePath = window.location.pathname.startsWith('/Web-Profile-iamikhsank') ? '/Web-Profile-iamikhsank' : '';
-      const fullPath = targetRoute === "/" ? (basePath ? `${basePath}/` : "/") : `${basePath}${targetRoute}/`;
+      const fullPath = targetRoute === "/" ? "/" : `${targetRoute}/`;
       window.history.pushState({}, "", fullPath);
     }
     setCurrentRoute(targetRoute);

@@ -3,7 +3,7 @@
 > **Spesialis Data Analytics & Konsultan Business Intelligence (BI)**  
 > *Mengubah jutaan baris data mentah perusahaan menjadi Executive Dashboard Interaktif, Prediksi Bisnis berbasis Machine Learning, dan Laporan Strategis.*
 
-**Live Website**: [https://iamikhsank.github.io/Web-Profile-iamikhsank/](https://iamikhsank.github.io/Web-Profile-iamikhsank/)
+**Live Website**: [https://iamikhsank.github.io/](https://iamikhsank.github.io/)
 
 ---
 
@@ -44,10 +44,10 @@
 
 ```bash
 # 1. Clone repository
-git clone https://github.com/iamikhsank/Web-Profile-iamikhsank.git
+git clone https://github.com/iamikhsank/iamikhsank.github.io.git
 
 # 2. Masuk ke direktori
-cd Web-Profile-iamikhsank
+cd iamikhsank.github.io
 
 # 3. Install dependensi
 npm install

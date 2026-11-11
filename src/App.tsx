@@ -2316,8 +2316,8 @@ ${formData.message}`;
         
         <p className="text-lg sm:text-xl md:text-2xl text-[#86868b] max-w-3xl mx-auto font-light leading-relaxed mt-4 mb-10">
             {lang === 'en' 
-              ? 'Transforming millions of raw data rows into Interactive Executive Dashboards, Machine Learning Predictive Models, and Executive-Ready Strategic Reports.'
-              : 'Mengubah jutaan baris data mentah menjadi Executive Dashboard Interaktif, Prediksi Bisnis berbasis Machine Learning, dan Laporan Strategis yang siap dieksekusi oleh manajemen.'
+              ? 'I help businesses turn data into insights and practical solutions—from data analysis, Business Intelligence, and Machine Learning to process automation and data-driven web applications.'
+              : 'Saya membantu bisnis mengolah data menjadi insight dan solusi yang dapat digunakan—mulai dari analisis data, Business Intelligence, dan Machine Learning hingga otomatisasi proses serta pengembangan aplikasi web berbasis data.'
             }
         </p>
 
@@ -2493,6 +2493,45 @@ ${formData.message}`;
             </div>
         </div>
 
+    </section>
+
+
+    <section aria-labelledby="business-challenges-title" className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mt-16 mb-20">
+      <div className="text-center mb-8">
+        <h2 id="business-challenges-title" className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight">
+          {lang === 'en' ? 'What is holding your team back?' : 'Apa kendala tim Anda?'}
+        </h2>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-5">
+        {[
+          { title: lang === 'en' ? 'Reporting is still manual' : 'Rekap laporan masih manual',
+            solution: lang === 'en' ? 'Excel & Google Sheets Automation' : 'Otomasi Excel & Google Sheets',
+            href: '/#why-apps-script', section: 'why-apps-script', route: '', icon: Database },
+          { title: lang === 'en' ? 'Data is scattered and hard to monitor' : 'Data tersebar dan sulit dipantau',
+            solution: lang === 'en' ? 'Dashboards & Business Intelligence' : 'Dashboard & Business Intelligence',
+            href: getRouteHref('/services/power-bi-dashboard'), section: '', route: '/services/power-bi-dashboard', icon: BarChart3 },
+          { title: lang === 'en' ? 'Sales patterns are hard to understand' : 'Sulit membaca pola penjualan',
+            solution: lang === 'en' ? 'Data Analysis & Forecasting' : 'Analisis Data & Forecasting',
+            href: getRouteHref('/services/machine-learning-ai'), section: '', route: '/services/machine-learning-ai', icon: BrainCircuit }
+        ].map((item) => {
+          const Icon = item.icon;
+          return (
+            <a key={item.href} href={item.href}
+              onClick={(e) => {
+                if (item.section) scrollToSection(e, item.section);
+                else { e.preventDefault(); navigateRoute(item.route); }
+              }}
+              className="group flex flex-col items-start text-left rounded-2xl border border-white/10 bg-white/[0.025] p-6 sm:p-7 hover:border-white/30 hover:bg-white/[0.05] transition-colors focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white">
+              <span className="inline-flex items-center justify-center w-11 h-11 rounded-xl border border-white/10 bg-white/5 mb-5 text-slate-300"><Icon size={22} strokeWidth={1.5} aria-hidden="true" /></span>
+              <h3 className="text-lg sm:text-xl font-semibold text-white leading-snug mb-4">{item.title}</h3>
+              <div className="mt-auto flex items-center gap-3 justify-between w-full text-sm text-slate-300">
+                <span>{item.solution}</span>
+                <svg className="w-5 h-5 shrink-0 text-white/70" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7"><path d="M5 12h14m-6-6 6 6-6 6" strokeLinecap="round" strokeLinejoin="round" /></svg>
+              </div>
+            </a>
+          );
+        })}
+      </div>
     </section>
 
     {/* 2. SHOWCASE (Stacked Cards) */}

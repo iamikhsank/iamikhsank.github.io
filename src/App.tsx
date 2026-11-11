@@ -35,6 +35,7 @@ interface PortofolioItem {
   judul: string;
   seoTitle: string;
   klien: string;
+  labelKlien?: string;
   highlight: string;
   deskripsi: string;
   fitur: string[];
@@ -525,7 +526,8 @@ export default function App() {
             "warnaKategori": "blue",
             "judul": "Indonesia Economic Sentiment.",
             "seoTitle": "Analisis Sentimen Bisnis & Konsumen Indonesia | ITB–ITK BPS",
-            "klien": "Portofolio mandiri · data publik BPS",
+            "klien": "Badan Pusat Statistik (BPS)",
+            "labelKlien": "Sumber data:",
             "highlight": "Analisis 80 kuartal sentimen bisnis dan konsumen Indonesia.",
             "deskripsi": "Dashboard interaktif untuk membandingkan Indeks Tendensi Bisnis (ITB) dan Indeks Tendensi Konsumen (ITK), membaca divergensi sentimen, serta menelusuri pola ekonomi periode 2000 Q2–2020 Q1.",
             "fitur": [
@@ -548,7 +550,7 @@ export default function App() {
             "caseStudy": {
               "seoTitle": "Analisis Sentimen Ekonomi Indonesia — ITB & ITK",
               "problem": "Indikator kepercayaan bisnis dan konsumen dapat bergerak berbeda. Data historis perlu disajikan secara interaktif agar tren, volatilitas, dan divergensinya mudah dibandingkan.",
-              "data": "80 observasi kuartalan ITB dan ITK periode 2000 Q2–2020 Q1, bersumber dari data publik Badan Pusat Statistik (BPS). Proyek ini merupakan portofolio mandiri, bukan klaim penugasan dari BPS.",
+              "data": "80 observasi kuartalan ITB dan ITK periode 2000 Q2–2020 Q1, bersumber dari data publik Badan Pusat Statistik (BPS).",
               "analysis": "Validasi data dengan Python/Pandas, perhitungan rata-rata dan standar deviasi, korelasi Pearson, selisih ITB–ITK, serta klasifikasi empat kuadran terhadap level netral 100.",
               "dashboard": "Dashboard React/TypeScript dengan tren dua indeks, peta kuadran, filter periode dan kuartal, profil statistik, insight ringkas, serta tabel data dengan ekspor CSV.",
               "insight": "Dalam dataset proyek, rata-rata ITB 106,70 dan ITK 108,09. ITK lebih volatil; korelasi ITB–ITK sekitar 0,369 menunjukkan hubungan positif yang tidak selalu searah. Temuan ini menggambarkan periode historis, bukan kondisi ekonomi terkini.",
@@ -2069,7 +2071,7 @@ ${formData.message}`;
                       {item.seoTitle?.split('|')[0].trim() || item.highlight}
                     </p>
 
-                    <p className="text-sm sm:text-base text-[#86868b] font-medium mb-3">{lang === 'en' ? 'Client:' : 'Klien:'} {item.klien}</p>
+                    <p className="text-sm sm:text-base text-[#86868b] font-medium mb-3">{item.labelKlien || (lang === 'en' ? 'Client:' : 'Klien:')} {item.klien}</p>
                     <p className="text-sm sm:text-base text-[#86868b] leading-relaxed mb-5 line-clamp-3">{item.deskripsi}</p>
                   </div>
 
@@ -2533,7 +2535,7 @@ ${formData.message}`;
                                         <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-1.5 tracking-tight leading-tight">{item.judul}</h3>
                                         
                                         {/* Klien Info */}
-                                        <p className="text-sm sm:text-base font-semibold text-[#86868b] uppercase tracking-wider mb-4">{lang === 'en' ? 'Client:' : 'Klien:'} {item.klien}</p>
+                                        <p className="text-sm sm:text-base font-semibold text-[#86868b] uppercase tracking-wider mb-4">{item.labelKlien || (lang === 'en' ? 'Client:' : 'Klien:')} {item.klien}</p>
                                         
                                         <p className="text-[#86868b] text-sm sm:text-base font-light leading-relaxed mb-5">
                                             <span className="text-white font-medium">{item.highlight}</span> {item.deskripsi}
@@ -3471,7 +3473,7 @@ ${formData.message}`;
                 <span className="glint-pill-static">
                   {selectedCaseStudy.kategori}
                 </span>
-                <span className="text-xs sm:text-sm font-semibold text-[#86868b] uppercase tracking-wider">{lang === 'en' ? 'Client:' : 'Klien:'} {selectedCaseStudy.klien}</span>
+                <span className="text-xs sm:text-sm font-semibold text-[#86868b] uppercase tracking-wider">{selectedCaseStudy.labelKlien || (lang === 'en' ? 'Client:' : 'Klien:')} {selectedCaseStudy.klien}</span>
               </div>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-white tracking-tight leading-tight">{selectedCaseStudy.seoTitle || selectedCaseStudy.judul}</h2>
             </div>

@@ -42,6 +42,7 @@ interface PortofolioItem {
   metrikLabel: string;
   linkGambar: string;
   linkProject: string;
+  linkRepo?: string;
   techStack: string[];
   caseStudy: CaseStudyDetail;
 }
@@ -518,6 +519,42 @@ export default function App() {
       // Mock data for development
       setTimeout(() => {
         setPortofolio([
+          {
+            "id": "PRJ-014",
+            "kategori": "Economic Analytics & BI",
+            "warnaKategori": "blue",
+            "judul": "Indonesia Economic Sentiment.",
+            "seoTitle": "Analisis Sentimen Bisnis & Konsumen Indonesia | ITB–ITK BPS",
+            "klien": "Portofolio mandiri · data publik BPS",
+            "highlight": "Analisis 80 kuartal sentimen bisnis dan konsumen Indonesia.",
+            "deskripsi": "Dashboard interaktif untuk membandingkan Indeks Tendensi Bisnis (ITB) dan Indeks Tendensi Konsumen (ITK), membaca divergensi sentimen, serta menelusuri pola ekonomi periode 2000 Q2–2020 Q1.",
+            "fitur": [
+              "Tren ITB–ITK dan filter periode/kuartal",
+              "Peta empat kuadran sentimen ekonomi",
+              "Profil statistik, korelasi & divergensi",
+              "Tabel master data dan ekspor CSV"
+            ],
+            "metrikNilai": "80 Kuartal",
+            "metrikLabel": "Observasi historis · 2000 Q2–2020 Q1",
+            "linkGambar": "./assets/prj_img/indonesia-economic-sentiment.webp",
+            "linkProject": "https://iamikhsank.github.io/indonesia-economic-sentiment-analysis/",
+            "linkRepo": "https://github.com/iamikhsank/indonesia-economic-sentiment-analysis",
+            "techStack": [
+              "React 19",
+              "TypeScript",
+              "Python",
+              "Recharts"
+            ],
+            "caseStudy": {
+              "seoTitle": "Analisis Sentimen Ekonomi Indonesia — ITB & ITK",
+              "problem": "Indikator kepercayaan bisnis dan konsumen dapat bergerak berbeda. Data historis perlu disajikan secara interaktif agar tren, volatilitas, dan divergensinya mudah dibandingkan.",
+              "data": "80 observasi kuartalan ITB dan ITK periode 2000 Q2–2020 Q1, bersumber dari data publik Badan Pusat Statistik (BPS). Proyek ini merupakan portofolio mandiri, bukan klaim penugasan dari BPS.",
+              "analysis": "Validasi data dengan Python/Pandas, perhitungan rata-rata dan standar deviasi, korelasi Pearson, selisih ITB–ITK, serta klasifikasi empat kuadran terhadap level netral 100.",
+              "dashboard": "Dashboard React/TypeScript dengan tren dua indeks, peta kuadran, filter periode dan kuartal, profil statistik, insight ringkas, serta tabel data dengan ekspor CSV.",
+              "insight": "Dalam dataset proyek, rata-rata ITB 106,70 dan ITK 108,09. ITK lebih volatil; korelasi ITB–ITK sekitar 0,369 menunjukkan hubungan positif yang tidak selalu searah. Temuan ini menggambarkan periode historis, bukan kondisi ekonomi terkini.",
+              "businessImpact": "Mempermudah eksplorasi data ekonomi historis dan komunikasi temuan statistik melalui dashboard interaktif yang bisa diakses publik, dengan alur analisis yang tersedia di repository proyek."
+            }
+          },
           {
             id: "PRJ-004",
             kategori: "Enterprise BI & Govt",
@@ -1969,8 +2006,8 @@ ${formData.message}`;
 
           <p className="text-lg md:text-xl text-[#86868b] max-w-3xl mx-auto font-light leading-relaxed mb-10">
             {lang === 'en' 
-              ? 'Deep-dive exploration of how 10 data analytics and BI dashboard projects helped enterprises eliminate operational bottlenecks, save server costs, and accelerate executive decision-making.'
-              : 'Eksplorasi mendalam bagaimana 10 proyek analitik data dan dashboard BI membantu perusahaan mengeliminasi bottleneck operasional, menghemat biaya server, dan mempercepat pengambilan keputusan eksekutif.'
+              ? 'Deep-dive exploration of how data analytics and BI dashboard projects helped enterprises eliminate operational bottlenecks, save server costs, and accelerate executive decision-making.'
+              : 'Eksplorasi mendalam bagaimana proyek analitik data dan dashboard BI membantu perusahaan mengeliminasi bottleneck operasional, menghemat biaya server, dan mempercepat pengambilan keputusan eksekutif.'
             }
           </p>
 
@@ -3475,6 +3512,17 @@ ${formData.message}`;
                 </div>
               </div>
             </div>
+
+            {(selectedCaseStudy.linkProject && selectedCaseStudy.linkProject !== '#') && (
+              <div className="flex flex-wrap gap-3">
+                <a href={selectedCaseStudy.linkProject} target="_blank" rel="noopener noreferrer" className="pill-btn-specular !px-5 !py-2.5 text-sm font-semibold text-white">
+                  {lang === 'en' ? 'Open Live Dashboard' : 'Buka Dashboard'} ↗
+                </a>
+                {selectedCaseStudy.linkRepo && <a href={selectedCaseStudy.linkRepo} target="_blank" rel="noopener noreferrer" className="pill-btn-specular !px-5 !py-2.5 text-sm font-semibold text-white">
+                  {lang === 'en' ? 'View Repository' : 'Lihat Repository'} ↗
+                </a>}
+              </div>
+            )}
 
             {/* 6-Stage McKinsey/BCG Framework Grid */}
             <div className="space-y-6">

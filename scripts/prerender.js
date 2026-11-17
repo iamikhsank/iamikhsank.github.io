@@ -151,7 +151,7 @@ routes.forEach((route) => {
 
   customHtml = customHtml.replace(
     /<div id="root">.*?<\/div>/s,
-    `<div id="root">${staticRootContent}</div>`
+    `<div id="root"><noscript>${staticRootContent}</noscript></div>`
   );
 
   const outputPath = path.join(routeDir, 'index.html');

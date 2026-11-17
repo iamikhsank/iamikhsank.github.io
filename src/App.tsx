@@ -725,7 +725,7 @@ ${formData.message}`;
               {/* Button 1: Konsultasi Dashboard Power BI */}
               <a 
                 href={getRouteHref('/')} 
-                onClick={(e) => scrollToSection(e, 'contact')} 
+                onClick={(e) => handleNavClick(e, 'contact')} 
                 className="glint-border-wrapper group cursor-pointer text-center w-full sm:w-auto"
               >
                 <div className="glint-spinner"></div>
@@ -887,7 +887,7 @@ ${formData.message}`;
               {/* Button 1: Konsultasi Data Cleansing */}
               <a 
                 href={getRouteHref('/')} 
-                onClick={(e) => scrollToSection(e, 'contact')} 
+                onClick={(e) => handleNavClick(e, 'contact')} 
                 className="glint-border-wrapper group cursor-pointer text-center w-full sm:w-auto"
               >
                 <div className="glint-spinner"></div>
@@ -1049,7 +1049,7 @@ ${formData.message}`;
               {/* Button 1: Konsultasi Corporate BI */}
               <a 
                 href={getRouteHref('/')} 
-                onClick={(e) => scrollToSection(e, 'contact')} 
+                onClick={(e) => handleNavClick(e, 'contact')} 
                 className="glint-border-wrapper group cursor-pointer text-center"
               >
                 <div className="glint-spinner"></div>
@@ -1226,7 +1226,7 @@ ${formData.message}`;
               {/* Button 1: Konsultasi Machine Learning & AI */}
               <a 
                 href={getRouteHref('/')} 
-                onClick={(e) => scrollToSection(e, 'contact')} 
+                onClick={(e) => handleNavClick(e, 'contact')} 
                 className="glint-border-wrapper group cursor-pointer text-center"
               >
                 <div className="glint-spinner"></div>
@@ -1407,7 +1407,7 @@ ${formData.message}`;
             {/* Button 1: Konsultasi Studi Kasus Anda */}
             <a 
               href={getRouteHref('/')} 
-              onClick={(e) => scrollToSection(e, 'contact')} 
+              onClick={(e) => handleNavClick(e, 'contact')} 
               className="glint-border-wrapper group cursor-pointer text-center"
             >
               <div className="glint-spinner"></div>
@@ -1716,7 +1716,7 @@ ${formData.message}`;
             {/* Button 2: Konsultasi Gratis (Pure Monochrome Platinum Specular Glint) */}
             <a 
               href={getRouteHref('/')} 
-              onClick={(e) => scrollToSection(e, 'contact')} 
+              onClick={(e) => handleNavClick(e, 'contact')} 
               className="glint-border-wrapper group cursor-pointer text-center w-full sm:w-auto"
             >
               <div className="glint-spinner"></div>

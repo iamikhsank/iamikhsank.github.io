@@ -12,7 +12,13 @@ if (!fs.existsSync(templatePath)) {
   process.exit(1);
 }
 
-const baseHtml = fs.readFileSync(templatePath, 'utf-8');
+// Vite's single-file plugin makes icon paths relative; nested routes need
+// root-relative URLs so they all load the same site favicon.
+const baseHtml = fs.readFileSync(templatePath, 'utf-8').replace(
+  /(<link\b[^>]*\brel=["'](?:icon|shortcut icon|apple-touch-icon)["'][^>]*\bhref=["'])\.\/(favicon-192\.png|favicon\.ico|apple-touch-icon\.png)(["'])/gi,
+  '$1/$2$3'
+);
+fs.writeFileSync(templatePath, baseHtml, 'utf-8');
 
 // Copy 404.html for GitHub Pages SPA direct link reload safety
 const path404 = path.join(distDir, '404.html');

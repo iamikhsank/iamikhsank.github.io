@@ -334,16 +334,14 @@ body {
   box-shadow: 0 0 35px rgba(255, 255, 255, 0.45), 0 0 70px rgba(255, 255, 255, 0.25);
 }
 
-/* GPU Accelerated Conic Seamless Blended Holographic Light Glint Spinner */
+/* Keep the animated light inside the pill at every angle. */
 .glint-spinner,
 .glint-spinner-fastwork {
   position: absolute;
-  top: -150%;
-  left: -150%;
-  width: 400%;
-  height: 400%;
+  inset: 0;
+  border-radius: inherit;
   background: conic-gradient(
-    from 0deg,
+    from var(--border-angle),
     #ffffff 0%,
     #d0e8f5 10%,
     #1a2840 22%,
@@ -355,13 +353,17 @@ body {
     #d0e8f5 95%,
     #ffffff 100%
   );
-  transform-origin: 50% 50%;
-  will-change: transform;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  animation: glint-rotate 6s linear infinite;
+  animation: conic-spin 6s linear infinite;
   pointer-events: none;
   z-index: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .glint-spinner,
+  .glint-spinner-fastwork,
+  .shimmer-sweep-beam {
+    animation: none;
+  }
 }
 
 .glint-border-wrapper:hover .glint-spinner,

@@ -2,6 +2,58 @@ import type { ArtikelItem } from '../types/content';
 
 export const artikelList: ArtikelItem[] = [
   {
+    "id": "ART-021",
+    "judul": "Pareto & Slope Chart: Konsistensi Pemeriksaan Kesehatan Lansia Jakarta",
+    "seoTitle": "Analisis Pareto dan Perubahan Bulanan Pemeriksaan Kesehatan Lansia DKI Jakarta",
+    "deskripsi": "Analisis 29.890 pemeriksaan Agustus–September 2026 hingga tingkat kelurahan, menggunakan Pareto Chart dan Slope Chart untuk menemukan wilayah prioritas serta perubahan pencatatan antarbulan.",
+    "platform": "LinkedIn",
+    "kategori": "Healthcare Analytics & BI",
+    "linkArtikel": "https://lnkd.in/p/gFDmmYgE",
+    "linkGambar": "https://media.licdn.com/dms/image/v2/D5622AQEIZEeUqHzeKA/feedshare-shrink_800/B56aHnu2kLH0Ag-/0/1794889181826?e=1796256000&v=beta&t=YlVO24IvaxnKy1zMTj6yIIkzGlct65sYHoo9atI3FR0",
+    "tanggalPublikasi": "17 Nov 2026",
+    "waktuBaca": "Posting LinkedIn",
+    "penulis": "Ikhsan Kamal"
+  },
+  {
+    "id": "ART-020",
+    "judul": "Peta Ketersediaan Data & Kepatuhan Pelaporan Kesehatan Lansia",
+    "seoTitle": "Analisis Kuadran Volume Pemeriksaan dan Kepatuhan Pelaporan BKL DKI Jakarta",
+    "deskripsi": "Pemetaan kuadran 29.890 pemeriksaan dan pelaporan 357 unit BKL di enam wilayah DKI Jakarta untuk membandingkan volume aktivitas dengan kepatuhan pelaporan.",
+    "platform": "LinkedIn",
+    "kategori": "Healthcare Analytics & BI",
+    "linkArtikel": "https://lnkd.in/p/gqXTWR7b",
+    "linkGambar": "https://media.licdn.com/dms/image/v2/D5622AQHzFWDtYXxYxg/feedshare-shrink_800/B56aHTFencIkAg-/0/1794542791494?e=1796256000&v=beta&t=zLRgldFJMk4ZzVKuBnFaEZgQEC4lKnKP-XmnTEAvbd0",
+    "tanggalPublikasi": "13 Nov 2026",
+    "waktuBaca": "Posting LinkedIn",
+    "penulis": "Ikhsan Kamal"
+  },
+  {
+    "id": "ART-019",
+    "judul": "Monitoring Pemeriksaan Kesehatan Lansia & Pelaporan SIDAYA",
+    "seoTitle": "Monitoring Data Pemeriksaan Kesehatan Lansia dan Pelaporan SIDAYA DKI Jakarta",
+    "deskripsi": "Visualisasi ketersediaan data pemeriksaan dan pelaporan SIDAYA di 267 kelurahan DKI Jakarta pada Agustus–September 2026, untuk membantu mengidentifikasi kesenjangan pelaporan.",
+    "platform": "LinkedIn",
+    "kategori": "Healthcare Analytics & BI",
+    "linkArtikel": "https://lnkd.in/p/gxi6Hv8V",
+    "linkGambar": "https://media.licdn.com/dms/image/v2/D5622AQExhmTmdbaQpA/feedshare-shrink_800/B56aHSlxkiH0Ag-/0/1794534480489?e=1796256000&v=beta&t=M3zUAl5PQ7vpRdndygw3DxdyJjCV3whdQ-giZEKa_dI",
+    "tanggalPublikasi": "13 Nov 2026",
+    "waktuBaca": "Posting LinkedIn",
+    "penulis": "Ikhsan Kamal"
+  },
+  {
+    "id": "ART-018",
+    "judul": "Membaca Komposisi Dataset Tenaga Kesehatan",
+    "seoTitle": "Visualisasi Komposisi Profesi dan Lokasi dalam Dataset Tenaga Kesehatan",
+    "deskripsi": "Visualisasi sekitar 34.800 data, 33 kategori profesi, dan 601 nilai lokasi dalam sebuah dataset tenaga kesehatan. Temuan menggambarkan dataset yang dianalisis, bukan keseluruhan tenaga kesehatan Indonesia.",
+    "platform": "LinkedIn",
+    "kategori": "Healthcare Analytics & BI",
+    "linkArtikel": "https://lnkd.in/p/ghuA39Zz",
+    "linkGambar": "https://media.licdn.com/dms/image/v2/D5622AQHJpOeex0KlYQ/feedshare-shrink_800/B56aHLj2AIGgAg-/0/1794416533825?e=1796256000&v=beta&t=bLDBUxoaxzhPyKLbzgqXVdqhh0VKTMUa5SUkzIpi9k0",
+    "tanggalPublikasi": "12 Nov 2026",
+    "waktuBaca": "Posting LinkedIn",
+    "penulis": "Ikhsan Kamal"
+  },
+  {
     "id": "ART-017",
     "judul": "Indonesia Economic Sentiment Analysis",
     "seoTitle": "Analisis Sentimen Bisnis & Konsumen Indonesia — ITB & ITK BPS",
@@ -93,19 +145,6 @@ export const artikelList: ArtikelItem[] = [
     penulis: "Ikhsan Kamal"
   },
   {
-    id: "ART-010",
-    judul: "Banking & Financial Performance Power BI Dashboard",
-    seoTitle: "Dashboard Analisis Kinerja Perbankan & Keuangan Enterprise (YoY Growth, Funding vs Lending, Liquidity)",
-    deskripsi: "Desain dashboard analitik perbankan komprehensif untuk memantau tren pertumbuhan keuangan YoY, rasio Funding vs Lending, distribusi produk & aset, hingga pemantauan likuiditas & cashflow operasional secara real-time.",
-    platform: "LinkedIn",
-    kategori: "Financial BI & Analytics",
-    linkArtikel: "https://www.linkedin.com/posts/ikhsankamal_dataanalytics-powerbi-businessintelligence-activity-7445104428140998656-vorm",
-    linkGambar: "https://media.licdn.com/dms/image/v2/D5622AQEnSNxbofhyDw/feedshare-shrink_800/B56Z1JTBePKYAc-/0/1775051217079?e=2147483647&v=beta&t=UjzyKdwlyom7_qvqEpGbQ8zftaxEcUSQ-CbQ87QwPXc",
-    tanggalPublikasi: "01 Apr 2026",
-    waktuBaca: "3 min read",
-    penulis: "Ikhsan Kamal"
-  },
-  {
     id: "ART-009",
     judul: "HSSE Dashboard: Bridging Compliance Gaps with Data Insights",
     seoTitle: "HSSE Corporate Executive Dashboard Power BI untuk Monitoring Keselamatan & Kepatuhan Operasional",
@@ -115,6 +154,19 @@ export const artikelList: ArtikelItem[] = [
     linkArtikel: "https://www.linkedin.com/posts/ikhsankamal_businessintelligence-dataanalytics-hsse-activity-7445417409567621120-4a9Y",
     linkGambar: "https://media.licdn.com/dms/image/v2/D5622AQErDeZLMCD-qg/feedshare-shrink_800/B56Z1NvrccHMAc-/0/1775125837825?e=2147483647&v=beta&t=JOkH668zWIiCMt6MiXCa03QvTgoPVmz4VJlMt60HOEw",
     tanggalPublikasi: "02 Apr 2026",
+    waktuBaca: "3 min read",
+    penulis: "Ikhsan Kamal"
+  },
+  {
+    id: "ART-010",
+    judul: "Banking & Financial Performance Power BI Dashboard",
+    seoTitle: "Dashboard Analisis Kinerja Perbankan & Keuangan Enterprise (YoY Growth, Funding vs Lending, Liquidity)",
+    deskripsi: "Desain dashboard analitik perbankan komprehensif untuk memantau tren pertumbuhan keuangan YoY, rasio Funding vs Lending, distribusi produk & aset, hingga pemantauan likuiditas & cashflow operasional secara real-time.",
+    platform: "LinkedIn",
+    kategori: "Financial BI & Analytics",
+    linkArtikel: "https://www.linkedin.com/posts/ikhsankamal_dataanalytics-powerbi-businessintelligence-activity-7445104428140998656-vorm",
+    linkGambar: "https://media.licdn.com/dms/image/v2/D5622AQEnSNxbofhyDw/feedshare-shrink_800/B56Z1JTBePKYAc-/0/1775051217079?e=2147483647&v=beta&t=UjzyKdwlyom7_qvqEpGbQ8zftaxEcUSQ-CbQ87QwPXc",
+    tanggalPublikasi: "01 Apr 2026",
     waktuBaca: "3 min read",
     penulis: "Ikhsan Kamal"
   },

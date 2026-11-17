@@ -9,7 +9,7 @@ export const artikelList: ArtikelItem[] = [
     "platform": "LinkedIn",
     "kategori": "Healthcare Analytics & BI",
     "linkArtikel": "https://lnkd.in/p/gFDmmYgE",
-    "linkGambar": "https://media.licdn.com/dms/image/v2/D5622AQEIZEeUqHzeKA/feedshare-shrink_800/B56aHnu2kLH0Ag-/0/1794889181826?e=1796256000&v=beta&t=YlVO24IvaxnKy1zMTj6yIIkzGlct65sYHoo9atI3FR0",
+    "linkGambar": "https://media.licdn.com/dms/image/v2/D5622AQEIZEeUqHzeKA/feedshare-shrink_800/B56aHnu2kLH0Ag-/0/1794889181826?e=1796256000&v=beta&t=YlVO24IvaxnKy1zMTj6yIIkzGlct65sYHoo9atI3FRY",
     "tanggalPublikasi": "17 Nov 2026",
     "waktuBaca": "Posting LinkedIn",
     "penulis": "Ikhsan Kamal"
